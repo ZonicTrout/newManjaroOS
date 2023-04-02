@@ -8,6 +8,7 @@ sudo pacman -S python3
 sudo pacman -S firefox
 sudo pacman -S nautilus
 sudo pacman -S code
+sudo pacman -S 
 
 
 echo "Starting git setup"
@@ -24,8 +25,18 @@ echo "Starting Gnome Tweaks"
  make
  make install
  firefox "https://extensions.gnome.org/extension/307/dash-to-dock/"
+ cd ../
 
 echo "Finished Gnome Tweaks"
+
+echo "Starting balena-etcher"
+
+git clone https://aur.archlinux.org/balena-etcher-appimage.git
+cd balena-etcher-appimage.git
+makepkg
+sudo pacman -U balena-etcher-appimage-1.18.6-1-x86_64.pkg.tar.zst
+
+echo "Finished balena-etcher"
 
 echo "start expressvpn"
 
