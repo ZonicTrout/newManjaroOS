@@ -32,10 +32,11 @@ echo "Finished Gnome Tweaks"
 echo "Starting balena-etcher"
 
 git clone https://aur.archlinux.org/balena-etcher-appimage.git
+
 cd balena-etcher-appimage.git
 makepkg
 sudo pacman -U balena-etcher-appimage-1.18.6-1-x86_64.pkg.tar.zst
-
+cd ../
 echo "Finished balena-etcher"
 
 echo "start expressvpn"
@@ -57,6 +58,7 @@ tar -xvf Minecraft.tar.gz
 
 cd minecraft-launcher
 ./minecraft-launcher
+cd ../
 
 echo "Finished with Minecraft"
 
