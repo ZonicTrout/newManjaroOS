@@ -8,7 +8,7 @@ sudo pacman -S python3
 sudo pacman -S firefox
 sudo pacman -S nautilus
 sudo pacman -S code
-sudo pacman -S 
+sudo pacman -S steam
 
 
 echo "Starting git setup"
