@@ -9,6 +9,12 @@ sudo pacman -S nautilus
 sudo pacman -S gnome-terminal
 
 
+echo "Starting git setup"
+
+git config --global user.email "chesskingmj@gmail.com"
+git config --global user.name "MJ Roland"
+
+
 
 
 
